@@ -1,5 +1,5 @@
 {% set name = "jobard-remote-dask" %}
-{% set version = "1.1.1" %}
+{% set version = "1.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://gitlab.ifremer.fr/jobard/jobard_remote_dask/-/archive/{{ version }}/jobard_remote_dask-{{ version }}.tar.gz
-  sha256: 91296ecc6ab766a01f98214852e7eb4391a404e375db60b5e9db69792ef09c40
+  sha256: 0d57272b46d0be18be42da7c42f8180bdedf9e12c8262e7980cd8aa231b6a039
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
@@ -34,7 +34,7 @@ requirements:
     - pandas >=1.4.1,<1.5
     - filelock >=3.6.0,<3.7
     - click >=8.0.2
- 
+
 test:
   imports:
     - jobard_remote_dask
