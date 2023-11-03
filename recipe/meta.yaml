@@ -42,7 +42,7 @@ test:
   source_files:
     - tests/core/test_local.py
   requires:
-    - python
+    - python 3.9
   commands:
     - python tests/core/test_local.py
 
