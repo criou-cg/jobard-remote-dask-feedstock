@@ -1,11 +1,11 @@
-About jobard-remote-dask
-========================
+About jobard-remote-dask-feedstock
+==================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jobard-remote-dask-feedstock/blob/main/LICENSE.txt)
 
 Home: https://gitlab.ifremer.fr/jobard/jobard_remote_dask
 
 Package license: LGPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jobard-remote-dask-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Dask application, triggered remotely by the daemon, to execute remote jobs
 
