@@ -34,10 +34,17 @@ requirements:
     - pandas >=1.4.1,<1.5
     - filelock >=3.6.0,<3.7
     - click >=8.0.2
+    - kr8s >=0.8.15
 
 test:
   imports:
     - jobard_remote_dask
+  source_files:
+    - tests/core/test_local.py
+  requires:
+    - python
+  commands:
+    - python tests/core/test_local.py
 
 about:
   home: https://gitlab.ifremer.fr/jobard/jobard_remote_dask
