@@ -11,7 +11,7 @@ source:
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - jobard-remote-dask = jobard_remote_dask.cli.app:jobard_remote_dask
@@ -48,3 +48,4 @@ about:
 extra:
   recipe-maintainers:
     - marie59
+    - criou-cg
