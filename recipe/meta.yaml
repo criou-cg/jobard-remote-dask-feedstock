@@ -40,11 +40,11 @@ test:
   imports:
     - jobard_remote_dask
   source_files:
-    - tests/core/test_local.py
+    - /tests/core/test_local.py
   requires:
     - python 3.9
   commands:
-    - python tests/core/test_local.py
+    - python /tests/core/test_local.py
 
 about:
   home: https://gitlab.ifremer.fr/jobard/jobard_remote_dask
