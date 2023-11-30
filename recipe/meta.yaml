@@ -25,8 +25,8 @@ requirements:
 
   run:
     - python >=3.8
-    - dask >=2021.10.0
-    - distributed >=2021.10.0
+    - dask >=2021.10.0,<2023.11.0
+    - distributed >=2021.10.0,<2023.11.0
     - dask-jobqueue >=0.7.3,<0.8
     - cloudpickle >=2.0.0,<2.1.0
     - pydantic >=1.9.0,<2.0
