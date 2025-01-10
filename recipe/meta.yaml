@@ -29,7 +29,7 @@ requirements:
     - distributed >=2021.10.0,<2021.11.0
     - dask-jobqueue >=0.7.3,<0.8
     - cloudpickle >=2.0.0,<2.1.0
-    - numpy = <2
+    - numpy <2
     - pydantic >=1.9.0,<2.0
     - pyyaml >=6.0,<7.0
     - pandas >=1.4.1,<1.5
