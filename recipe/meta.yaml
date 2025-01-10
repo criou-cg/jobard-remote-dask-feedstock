@@ -1,5 +1,5 @@
 {% set name = "jobard-remote-dask" %}
-{% set version = "1.2.9" %}
+{% set version = "1.2.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://gitlab.ifremer.fr/jobard/jobard_remote_dask/-/archive/{{ version }}/jobard_remote_dask-{{ version }}.tar.gz
-  sha256: 57d7361ca931f779b5574bd9db38bb89778fa92dbc4b2da33fa9970db84647cc
+  sha256: 86e677ae45d773a7aa25cd5ffbd9194b45268a0d577f597622f590c090813d36
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
@@ -29,6 +29,7 @@ requirements:
     - distributed >=2021.10.0,<2021.11.0
     - dask-jobqueue >=0.7.3,<0.8
     - cloudpickle >=2.0.0,<2.1.0
+    - numpy <2
     - pydantic >=1.9.0,<2.0
     - pyyaml >=6.0,<7.0
     - pandas >=1.4.1,<1.5
