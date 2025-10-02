@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://gitlab.ifremer.fr/jobard/jobard_remote_dask/-/archive/{{ version }}/jobard_remote_dask-{{ version }}.tar.gz
-  sha256: 398ec3189a58c547655886142b1cc5a223d71ccce4270fcc968b99a559e3a242
+  sha256: f465fe41ed207c2104ee2fa1b2eb4c15bf6cb988addeb189e2b773eda9112752
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
