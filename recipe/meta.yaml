@@ -10,8 +10,10 @@ source:
   sha256: f465fe41ed207c2104ee2fa1b2eb4c15bf6cb988addeb189e2b773eda9112752
 
 build:
+  script_env:
+    - POETRY_DYNAMIC_VERSIONING_BYPASS={{ version }}
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - jobard-remote-dask = jobard_remote_dask.cli.app:jobard_remote_dask
